@@ -9,17 +9,17 @@ const ideas = [
   {
     nick: 'cool-idea-nick-2',
     name: 'Idea 2',
-    descriptions: 'Descriptions of idea 1...',
+    descriptions: 'Descriptions of idea 2...',
   },
   {
     nick: 'cool-idea-nick-3',
     name: 'Idea 3',
-    descriptions: 'Descriptions of idea 1...',
+    descriptions: 'Descriptions of idea 3...',
   },
   {
     nick: 'cool-idea-nick-4',
     name: 'Idea 4',
-    descriptions: 'Descriptions of idea 1...',
+    descriptions: 'Descriptions of idea 4...',
   },
 ]
 
