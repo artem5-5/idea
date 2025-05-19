@@ -21,7 +21,10 @@
     "lib": ["ES2021"],
     "module": "Node16",
     "moduleResolution": "node16",
-    "target": "ES2021"
+    "target": "ES2021",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
