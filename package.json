@@ -1,5 +1,22 @@
 {
     "name": "idea",
     "private": true,
-    "version": "0.0.0"
+    "version": "0.0.0",
+    "scripts": {
+        "b": "pnpm --filter @idea/backend",
+        "w": "pnpm --filter @idea/webapp",
+        "dev": "pnpm -r --parallel dev",
+        "prettify": "pnpm -r --parallel prettify",
+        "types": "concurrently 'pnpm b types' 'pnpm w types'"
+
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2",
+        "prettier": "^3.5.3",
+        "rimraf": "^6.0.1",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "tsx": "^4.19.4",
+        "typescript": "^5.8.3"
+    }
 }
