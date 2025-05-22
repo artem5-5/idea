@@ -12,6 +12,8 @@ export const AllIdeasPage = () => {
     return <span>Error: {error.message}</span>
   }
 
+  const i:number = "1212"
+
   return (
     <div>
       <div>All Ideas</div>
