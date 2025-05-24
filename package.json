@@ -9,7 +9,7 @@
     "dev": "pnpm -r --parallel dev",
     "prettify": "pnpm -r --parallel prettify",
     "types": "concurrently \"pnpm b types\" \"pnpm w types\"",
-    "lint": "concurrently 'pnpm b lint' 'pnpm w lint'",
+    "lint": "concurrently \"pnpm b lint\" \"pnpm w lint\"",
     "prepare": "husky"
   },
   "devDependencies": {
