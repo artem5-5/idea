@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
-    "@types/node": "^22.15.17"
+    "@types/node": "^22.15.17",
+    "globals": "^16.2.0"
   }
 }
