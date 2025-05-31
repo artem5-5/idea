@@ -36,6 +36,7 @@ export default [
       ...prettierPlugin.configs.recommended.rules,
       ...eslintConfigPrettier.rules,
       'react/react-in-jsx-scope': 'off',
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
       'import/order': [
         'error',
         {
@@ -56,7 +57,10 @@ export default [
       '@typescript-eslint/consistent-type-assertions': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
       curly: ['error', 'all'],
-      'no-irregular-whitespace': ['error', { skipTemplates: true, skipStrings: true }],
+      'no-irregular-whitespace': [
+        'error',
+        { skipTemplates: true, skipStrings: true },
+      ],
       'no-console': ['error', { allow: ['info', 'error', 'warn'] }],
     },
   },
