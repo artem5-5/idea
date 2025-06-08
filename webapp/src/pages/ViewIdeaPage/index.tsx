@@ -25,10 +25,12 @@ export const ViewIdeaPage = () => {
   }
 
   return (
-    <div>
+    <div className={css.container}>
       <div className={css.title}>{ideaNick}</div>
-      <div>Idea Text:</div>
-      <div dangerouslySetInnerHTML={{ __html: data.idea.text }} />
+      <div
+        className={css.description}
+        dangerouslySetInnerHTML={{ __html: data.idea.text }}
+      />
     </div>
   )
 }

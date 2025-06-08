@@ -19,16 +19,16 @@ export const AllIdeasPage = () => {
     <div>
       <div className={css.title}>All Ideas</div>
       {data?.ideas.map((idea) => (
-        <div key={idea.name}>
-          <h2>
+        <div key={idea.name} className={css.container}>
+          <div className={css.wrapper}>
             <Link
               className={css.link}
               to={getViewIdeaRoute({ ideaNick: idea.nick as string })}
             >
-              {idea.name}
+              <div className={css.name}>{idea.name}</div>
             </Link>
-          </h2>
-          <p>{idea.descriptions}</p>
+          </div>
+          <div className={css.description}>{idea.descriptions}</div>
         </div>
       ))}
     </div>
