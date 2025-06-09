@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import { Segment } from './../../components/Segment/index'
 import { trpc } from './../../lib/trpc'
 import css from './index.module.scss'
 import type { ViewIdeaRouteParams } from '@/lib/routes'
@@ -25,12 +26,13 @@ export const ViewIdeaPage = () => {
   }
 
   return (
-    <div className={css.container}>
-      <div className={css.title}>{ideaNick}</div>
-      <div
-        className={css.description}
-        dangerouslySetInnerHTML={{ __html: data.idea.text }}
-      />
+    <div className={css.wrapper}>
+      <Segment size={2} title={ideaNick} description={data.idea.descriptions}>
+        <div
+          className={css.text}
+          dangerouslySetInnerHTML={{ __html: data.idea.text }}
+        />
+      </Segment>
     </div>
   )
 }

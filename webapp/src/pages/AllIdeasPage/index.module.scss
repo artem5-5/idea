@@ -1,25 +1,12 @@
 @import './../../styles/vars';
 @import './../../styles/mixins';
 
-.title {
-  @include h1;
-}
-
 .container {
-  @include container;
   .wrapper {
-    margin-left: 10px;
-    margin-top: 10px;
+    @include wrapper;
+
     .link {
       @include link;
-      .name {
-        @include h2;
-      }
     }
-  }
-  .description {
-    @include description;
-    margin-left: 10px;
-    margin-bottom: 20px;
   }
 }
