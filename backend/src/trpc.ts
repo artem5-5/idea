@@ -11,7 +11,7 @@ const ideas = _.times(15, (i) => ({
   ),
 }))
 
-export const trpc = initTRPC.create()
+const trpc = initTRPC.create()
 
 export const trpcRouter = trpc.router({
   getIdeas: trpc.procedure.query(() => {
